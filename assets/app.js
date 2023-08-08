@@ -1,7 +1,7 @@
 window.onload = function() {
     const projectContainer = document.querySelector('#project-container');
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 8; i++) {
         const projectCard = document.createElement('div');
         projectCard.classList.add('project-card');
 

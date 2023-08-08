@@ -4,7 +4,7 @@
 body{
     background-color: #ecfeff;
     display: grid;
-    grid-template: auto 4fr / 1fr , 4fr;
+    grid-template: auto 4fr / 1fr 4fr;
     margin: 0;
 }
 
@@ -117,11 +117,6 @@ body{
     grid-template-columns: repeat(2, 1fr);
 }
 
-#messages{
-    grid-row: 3 / 5;
-    grid-column: 3 / 4;
-}
-
 .project-card{
     background-color: white;
     border-radius: 10px;
@@ -204,6 +199,29 @@ body{
     padding: .2rem;
 }
 
+#messages{
+    grid-row: 3 / 5;
+    grid-column: 3 / 4;
+}
+
+#message-container{
+    background-color: white;
+    border-radius: 10px;
+    margin: .5rem;   
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+#messages > h1{
+    margin: 1rem;
+}
+
+.message-card{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
 
 
 /********************************************************* END MAIN *************************************************************/
