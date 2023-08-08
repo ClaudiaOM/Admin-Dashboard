@@ -15,8 +15,28 @@ body{
 #header{
     grid-area: 1 / 2 / 2 / 5;
     background-color: #cffafe;
+    display: grid;
+    grid-template: auto 2fr / 1fr;
 }
 
 #main{    
     grid-area: 2 / 2 / 5 / 5;
 }
+
+/********************************************************* HEADER *************************************************************/
+
+#top-bar{
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottom-bar{
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/********************************************************* HEADER *************************************************************/
