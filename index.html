@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link href="assets/app.css" rel="stylesheet"/>
+
+    <script src="assets/app.js"></script>
 </head>
 <body>
 
@@ -111,9 +113,12 @@
          <section id="bottom-bar">            
             <!--User Section-->
             <div>
-                <div>
-                    <h4>Hi there,</h4>
-                    <h1>User Name (User tag)</h1>
+                <div class="d-flex flex-row flex-wrap">
+                    <span><img class="large-user-icon" src="assets/62112355.jpg" alt="User Icon"> </span>
+                    <div class="d-flex flex-column flex-wrap jc-center">
+                        <h4>Hi there,</h4>
+                        <h1 class="mt-1">User Name (User tag)</h1>
+                    </div>
                 </div>
             </div>
             <!--Search Bar-->
@@ -142,61 +147,8 @@
     <main id="main">
         <div id="main-container">                
             <section id="projects">
-                <div id="project-container">                        
-                    <div class="project-card">
-                        <h1>Project Title</h1>
-                        <div>
-                            <p>Project Description</p>
-                        </div>
-                        <div>
-                            Project Icons
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h1>Project Title</h1>
-                        <div>
-                            <p>Project Description</p>
-                        </div>
-                        <div>
-                            Project Icons
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h1>Project Title</h1>
-                        <div>
-                            <p>Project Description</p>
-                        </div>
-                        <div>
-                            Project Icons
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h1>Project Title</h1>
-                        <div>
-                            <p>Project Description</p>
-                        </div>
-                        <div>
-                            Project Icons
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h1>Project Title</h1>
-                        <div>
-                            <p>Project Description</p>
-                        </div>
-                        <div>
-                            Project Icons
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h1>Project Title</h1>
-                        <div>
-                            <p>Project Description</p>
-                        </div>
-                        <div>
-                            Project Icons
-                        </div>
-                    </div>
+                <h1 class="mt-1">Your Projects</h1>
+                <div id="project-container">                   
                 </div>
             </section>
             <section id="announcements">
@@ -251,5 +203,6 @@
         </div>
     </main>
     <!--Main-->
+
 </body>
 </html>

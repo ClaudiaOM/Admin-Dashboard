@@ -1,5 +1,6 @@
 
 
+
 body{
     background-color: #ecfeff;
     display: grid;
@@ -41,10 +42,21 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem;
+    margin-left: 2rem;
 }
 
 .small-user-icon{
     width: 45px;
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+.large-user-icon{
+    width: 60px;
     border: 2px solid #e2e8f0;
     border-radius: 50%;
     margin-left: 1rem;
@@ -103,7 +115,6 @@ body{
     display: grid;  
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
 }
 
 #announcements{
@@ -120,11 +131,55 @@ body{
 .project-card{
     background-color: white;
     border-radius: 10px;
-    margin: 1rem;
-    padding: 0.5rem;
-    border: 1px solid gray;
+    margin: .5rem;   
     box-shadow: 0 0 50px 10px transparent;
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template: repeat(3,1fr) / 1rem 1fr;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+    z-index: 10;
 }
+
+.project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.project-card > h1{
+    margin-left: 1rem;
+    text-align: center;
+    align-self: center;
+}
+
+.project-card  p{
+    margin-left: 1rem;
+    text-align: start;
+    align-self: center;
+}
+
+.project-icons{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 1rem;
+}
+
+.project-icons > svg{
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+#projects > h1{  
+    margin: 1rem;
+}
+
+.color-column{
+    background-color: #083344;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    border-radius: 10px 0px 0px 10px;
+}
+
 /********************************************************* END MAIN *************************************************************/
 
 .d-flex{
@@ -137,6 +192,10 @@ body{
 
 .flex-row{
     flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
 }
 
 .w-50{
@@ -217,9 +276,30 @@ input{
 
 li {
     transition: all 0.3s ease;
-  }
-  
-  li:hover {
+}
+
+li:hover {
     transform: scale(1.1);
-  }
+}
   
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button{
+    background-color: #0891b2;
+    color: white;
+    border: none;
+    font-size: medium;
+    border-radius: 15px;
+    padding: .8rem 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
