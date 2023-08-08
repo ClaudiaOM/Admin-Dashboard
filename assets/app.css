@@ -1,0 +1,22 @@
+
+
+body{
+    background-color: #ecfeff;
+    display: grid;
+    grid-template: auto 4fr / 1fr , 3fr;
+    margin: 0;
+}
+
+#sidebar{
+    grid-area: 1 / 1 / 5 / 2;
+    background-color: #0891b2;
+}
+
+#header{
+    grid-area: 1 / 2 / 2 / 5;
+    background-color: #cffafe;
+}
+
+#main{    
+    grid-area: 2 / 2 / 5 / 5;
+}
