@@ -47,8 +47,30 @@ body{
 #sidebar{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: start;
+}
+
+.nav-list{
+    list-style: none;
+    color: white;
+    font-size: x-large;
+    padding: 1rem;
+}
+
+.nav-list > li{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list > li > div{
+    width: 10%;
+}
+
+.nav-list > li > span{
+    margin-left: 1rem;
 }
 
 /********************************************************* END SIDEBAR *************************************************************/
@@ -95,3 +117,56 @@ body{
     box-shadow: 0 0 50px 10px red;
 }
 /********************************************************* END MAIN *************************************************************/
+
+.d-flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
+
+.white{
+    color: white;
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+
+.ml-1{
+    margin-left: 1rem;
+}
+
+.p-1{
+    padding: 0.5rem;
+}
